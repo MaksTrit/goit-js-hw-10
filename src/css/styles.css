@@ -18,3 +18,37 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+#search-box:focus {
+  outline-color: #0481bb;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+}
+
+p {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-item,
+.box-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.box-item:not(:last-child),
+.list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
