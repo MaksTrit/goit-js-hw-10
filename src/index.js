@@ -23,7 +23,9 @@ inputEl.addEventListener("input", debounce(() => {
 
 // Функція рендеру результату пошуку
 function renderResult(arrOfCountries) {
-    if (arrOfCountries.length > 10) {
+  if (arrOfCountries.length > 10) {
+        listEl.innerHTML = "";
+        countryBox.innerHTML = "";
         return Notify.info("Too many matches found. Please enter a more specific name.");
     } else if (arrOfCountries.length > 1 && arrOfCountries.length <= 10) {
         countryBox.innerHTML = "";
